@@ -67,14 +67,14 @@ input:checked+div span.line-2 {
 }
 </style>
 <template>
-    <nav class="relative dark:bg-cyanBlue bg-selago px-6 lg:py-0 py-10">
+    <nav class="relative border px-6 lg:py-0 py-10">
         <div class="lg:flex lg:items-center lg:justify-between lg:container lg:mx-auto mx-0">
             <div class="flex items-center justify-between relative">
                 <!-- Mobile menu -->
                 <div class="flex lg:hidden">
                     <NuxtLink to="/">
                         <!-- <img v-show="!isOpenBurgerMenu" src="/Logo.svg" class="w-fit absolute left-0 -top-5" alt=""> -->
-                    <h1 class="text-4xl font-bold">Logo</h1>
+                        <h1 class="text-4xl font-bold font-titles">Marjaan</h1>
 
                     </NuxtLink>
 
@@ -109,12 +109,10 @@ input:checked+div span.line-2 {
 
             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
             <div :class="isOpenBurgerMenu ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'"
-                class="absolute inset-x-0 justify-center z-20 w-full grow px-6 py-4 transition-all duration-300 ease-in-out lg:mt-0 bg-selago lg:p-0 top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
-                <div class="flex flex-col lg:flex-row gap-6 items-center lg:justify-between justify-center w-full">
-                    <NuxtLink to="/">
-                    <img src="/Logo.svg" class="w-fit self-center md:self-auto py-1" alt="Logo">
-                    </NuxtLink>
-                    <span class=" w-full flex md:flex-row flex-col  justify-center">
+                class="absolute inset-x-0 justify-center z-20 grow px-6 py-4 transition-all duration-300 ease-in-out lg:mt-0 max-w-7xl mx-auto lg:p-0 top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
+                <div class="flex flex-col lg:flex-row gap-6 items-center lg:justify-between justify-center w-full border px-10 my-5">
+
+                    <span class=" w-fit flex md:flex-row flex-col  justify-center border">
                         <NuxtLink v-for="(navLink, index) in NavbarLink" :to="navLink.href" :key="index"
                             @click="isOpenBurgerMenu = !isOpenBurgerMenu"
                             :active-class="'text-[#5F30E2] border-t-4  border-[#A0D4A1]'"
@@ -123,13 +121,23 @@ input:checked+div span.line-2 {
                         </NuxtLink>
                     </span>
 
-                    <div class="flex gap-5 md:self-auto self-end">
-                        <NuxtLink to="/auth/login"
+                    <NuxtLink to="/">
+
+                        <!-- <img src="/Logo.svg" class="w-fit self-center md:self-auto py-1" alt="Logo"> -->
+                        <h1 class="text-6xl font-titles border">Marjaan</h1>
+
+                    </NuxtLink>
+
+                    <div class="flex gap-5 md:self-auto self-end border">
+
+                        <!-- <NuxtLink to="/auth/login"
                             class="px-4 py-2 text-center font-medium text-sm rounded-md text-purplHeart border border-purplHeart cursor-pointer hover:bg-purplHeart hover:text-white transition-all">
                             Login</NuxtLink>
                         <NuxtLink to="/auth/Signup"
                             class="px-4 py-2 text-center font-medium text-sm rounded-md text-white bg-purplHeart">Signup
-                        </NuxtLink>
+                        </NuxtLink> -->
+                        Cart
+
                     </div>
                 </div>
             </div>
@@ -141,29 +149,29 @@ const isOpenBurgerMenu = ref(false);
 
 const NavbarLink = [
     {
-        name: "home",
+        name: "Men",
         href: "/",
     },
     {
-        name: "Old-home",
-        href: "/home",
+        name: "Ladiis",
+        href: "",
     },
-    {
-        name: "courses",
-        href: "/courses",
-    },
-    {
-        name: "profile",
-        href: "/profile/userProfile",
-    },
-    {
-        name: "Contact Us",
-        href: "/contactUs",
-    },
-    {
-        name: "About Us",
-        href: "/aboutUs",
-    },
+    // {
+    //     name: "courses",
+    //     href: "/courses",
+    // },
+    // {
+    //     name: "profile",
+    //     href: "/profile/userProfile",
+    // },
+    // {
+    //     name: "Contact Us",
+    //     href: "/contactUs",
+    // },
+    // {
+    //     name: "About Us",
+    //     href: "/aboutUs",
+    // },
 ];
 
 </script>

@@ -1,8 +1,8 @@
 export default defineNuxtConfig({
 	app: {
 		head: {
-			title: "Your Company Name",
-			titleTemplate: "%s | your slogan here",
+			title: "Marjaan",
+			// titleTemplate: "%s | your slogan here",
 			htmlAttrs: {
 				lang: "en",
 			},
@@ -25,7 +25,7 @@ export default defineNuxtConfig({
 	modules: ["@nuxtjs/tailwindcss"],
 
 	tailwindcss: {
-		cssPath: "~/assets/css/tailwind.css",
+		cssPath: "~/assets/css/main.css",
 		configPath: "~/tailwind.config.js",
 		exposeConfig: true,
 		injectPosition: 0,

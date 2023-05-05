@@ -12,21 +12,25 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				greatVibes:
-					[
-						"Great Vibes",
-						"cursive",
-					],
-				jost: [
-					"Jost",
-					"sans-serif",
+				titles: [
+					"ZCOOL XiaoWei",
+					"sans-serif"
 				],
-				handlee: [
-					"Handlee",
-					"cursive",
-				],
+				headings: [
+					"Syne", "sans-serif"
+				]
+
 			},
 			colors: {
+
+				linen: "#fdf7f2",
+				tan :"#d0ab91",
+				bisonHide: "#c6baaa",
+				lightorchid: "#e7b2d4",
+				tango: "#ef7828",
+				codGrey: "#141213",
+				graphite: "#2c2c2c",
+
 				// Purples
 				purplHeart:
 					"#5F30E2",
