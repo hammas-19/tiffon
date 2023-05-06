@@ -4,7 +4,8 @@
             <div class="text-center">
                 <span class="flex justify-center">
                     <!-- <img src="/Logo.svg" class="w-40" alt="Logo"> -->
-                    <h1 class="text-4xl font-bold">Logo</h1>
+                    <h1 class="text-4xl font-titles">Marjaan</h1>
+
                 </span>
 
                 <div class="flex flex-wrap justify-center mt-5 -mx-4">

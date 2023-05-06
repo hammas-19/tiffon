@@ -74,7 +74,7 @@ input:checked+div span.line-2 {
                 <div class="flex lg:hidden">
                     <NuxtLink to="/">
                         <!-- <img v-show="!isOpenBurgerMenu" src="/Logo.svg" class="w-fit absolute left-0 -top-5" alt=""> -->
-                        <h1 class="text-4xl font-bold font-titles">Marjaan</h1>
+                        <h1 class="text-5xl font-medium font-titles">Marjaan</h1>
 
                     </NuxtLink>
 
