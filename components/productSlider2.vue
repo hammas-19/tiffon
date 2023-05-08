@@ -45,7 +45,7 @@
       <div class="carousel__item">
 
         <!-- <ProductCardTest :image="'/gridImages/suit1.webp'" /> -->
-        <img src="/gridImages/suit1.webp" class="rounded-xl h-full max-h-60" alt="">
+        <img src="/gridImages/suit2.webp" class="rounded-xl h-full max-h-60" alt="">
 
       </div>
     </Slide>
@@ -57,6 +57,7 @@
 <script>
 import { defineComponent } from 'vue'
 import { Carousel, Pagination, Slide } from 'vue3-carousel'
+
 import 'vue3-carousel/dist/carousel.css'
 
 export default defineComponent({

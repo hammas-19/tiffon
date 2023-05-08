@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-white">
+    <footer class="bg-linen">
         <div class="container px-6 py-8 mx-auto bg-alabaster rounded-t-3xl">
             <div class="text-center">
                 <span class="flex justify-center">
