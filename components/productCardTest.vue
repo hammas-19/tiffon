@@ -1,77 +1,91 @@
 <template>
-    <a class="block rounded-lg p-4 shadow-sm shadow-indigo-100">
-        <img alt="Home"
-            :src="image"
-            class="h-56 w-full rounded-md object-cover" />
+<a href="#" class="block group">
+  <img
+    src="https://images.unsplash.com/photo-1592921870789-04563d55041c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+    alt=""
+    class="h-[350px] w-full object-cover sm:h-[450px] md:rounded-2xl rounded-lg"
+  />
 
-        <div class="mt-2">
-            <dl>
-                <div>
-                    <dt class="sr-only">Price</dt>
+  <div class="mt-1.5">
+    <p class="text-xs text-gray-500">Space Grey</p>
 
-                    <dd class="text-sm text-gray-500">$240,000</dd>
-                </div>
+    <div class="mt-1.5 flex gap-1">
+      <form>
+        <fieldset>
+          <legend class="sr-only">Color</legend>
+        </fieldset>
 
-                <div>
-                    <dt class="sr-only">Address</dt>
+        <div
+          class="flex flex-wrap justify-center gap-1 [&:hover_label]:opacity-75"
+        >
+          <div>
+            <input type="checkbox" id="ColorSg" class="sr-only" />
 
-                    <dd class="font-medium">123 Wallaby Avenue, Park Road</dd>
-                </div>
-            </dl>
+            <label
+              for="ColorSg"
+              class="block h-4 w-4 cursor-pointer rounded-full bg-[#595759] transition hover:!opacity-100"
+            >
+              <span class="sr-only"> Space Gray </span>
+            </label>
+          </div>
 
-            <div class="mt-6 flex items-center gap-8 text-xs">
-                <div class="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
-                    <svg class="h-4 w-4 text-indigo-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
-                    </svg>
+          <div>
+            <input type="checkbox" id="ColorS" class="sr-only" />
 
-                    <div class="mt-1.5 sm:mt-0">
-                        <p class="text-gray-500">Parking</p>
+            <label
+              for="ColorS"
+              class="block h-4 w-4 cursor-pointer rounded-full bg-[#d2d3d4] transition hover:!opacity-100"
+            >
+              <span class="sr-only"> Silver </span>
+            </label>
+          </div>
 
-                        <p class="font-medium">2 spaces</p>
-                    </div>
-                </div>
+          <div>
+            <input type="checkbox" id="ColorP" class="sr-only" />
 
-                <div class="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
-                    <svg class="h-4 w-4 text-indigo-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                    </svg>
+            <label
+              for="ColorP"
+              class="block h-4 w-4 cursor-pointer rounded-full bg-[#d89f97] transition hover:!opacity-100"
+            >
+              <span class="sr-only"> Pink </span>
+            </label>
+          </div>
 
-                    <div class="mt-1.5 sm:mt-0">
-                        <p class="text-gray-500">Bathroom</p>
+          <div>
+            <input type="checkbox" id="ColorG" class="sr-only" />
 
-                        <p class="font-medium">2 rooms</p>
-                    </div>
-                </div>
+            <label
+              for="ColorG"
+              class="block h-4 w-4 cursor-pointer rounded-full bg-[#afbfab] transition hover:!opacity-100"
+            >
+              <span class="sr-only"> Pink </span>
+            </label>
+          </div>
 
-                <div class="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
-                    <svg class="h-4 w-4 text-indigo-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-                    </svg>
+          <div>
+            <input type="checkbox" id="ColorSb" class="sr-only" />
 
-                    <div class="mt-1.5 sm:mt-0">
-                        <p class="text-gray-500">Bedroom</p>
-
-                        <p class="font-medium">4 rooms</p>
-                    </div>
-                </div>
-            </div>
+            <label
+              for="ColorSb"
+              class="block h-4 w-4 cursor-pointer rounded-full bg-[#91a5bb] transition hover:!opacity-100"
+            >
+              <span class="sr-only"> Pink </span>
+            </label>
+          </div>
         </div>
-    </a>
+      </form>
+    </div>
+
+    <div class="flex justify-between mt-3 text-sm">
+      <h3
+        class="text-gray-900 group-hover:underline group-hover:underline-offset-4"
+      >
+        Small Headphones
+      </h3>
+
+      <p class="text-gray-900">$299</p>
+    </div>
+  </div>
+</a>
 </template>
-<script setup>
-defineProps({
-    image: {
-        type: String,
-        default: ""
-    },
 
-
-})
-</script>
