@@ -1,5 +1,5 @@
 <template>
-<a href="#" class="block group">
+<NuxtLink to="/productDetail" href="#" class="block group">
   <img
     src="https://cdn.shopify.com/s/files/1/1752/8007/collections/accessories.jpg?v=1676716695&width=1500"
     alt=""
@@ -86,6 +86,6 @@
       <p class="text-black bg-bisonHide px-3 py-[2px] rounded-full">$299</p>
     </div>
   </div>
-</a>
+</NuxtLink>
 </template>
 
