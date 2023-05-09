@@ -27,7 +27,7 @@
                         <div class=" mt-8 flex justify-between">
                             <div class="max-w-[35ch] space-y-2">
                                 <h1 class="text-xl font-bold sm:text-2xl">
-                                    Fun Product That Does Something Cool
+                                    Shapaatar Hoodie from Laandhi
                                 </h1>
 
                                 <p class="text-sm">Highest Rated Product</p>
