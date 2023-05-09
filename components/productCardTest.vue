@@ -1,7 +1,7 @@
 <template>
 <NuxtLink to="/productDetail" class="block group">
   <img
-    src="https://cdn.shopify.com/s/files/1/1752/8007/collections/accessories.jpg?v=1676716695&width=1500"
+  :src="image"
     alt=""
     class="h-[350px] w-full object-cover sm:h-[450px] md:rounded-2xl rounded-lg"
   />
@@ -88,4 +88,12 @@
   </div>
 </NuxtLink>
 </template>
+<script setup>
+defineProps({
+    image: {
+        type: String,
+        default: ""
+    }
+})
+</script>
 
