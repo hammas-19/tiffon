@@ -91,6 +91,27 @@
             </div>
 
         </section>
+
+        <!-- Recommendation -->
+        <section class="w-full mx-auto md:py-10 py-5 px-2">
+            <div>
+
+                <div class="max-w-7xl mx-auto  px-3 flex justify-between items-end border-b md:pb-5 pb-3">
+
+                    <div class="flex flex-col text-black">
+                        <span class="md:text-xl text-sm font-headings">Men's</span>
+                        <h1 class="md:text-2xl text-xl font-headings">You May Like</h1>
+                    </div>
+                    <NuxtLink to="/productsMen" class="md:text-xl text-sm">
+                        View All
+                    </NuxtLink>
+
+                </div>
+                <RelatedProducts class="py-5"/>
+
+            </div>
+        </section>
+
     </div>
 </template>
 <script setup>
