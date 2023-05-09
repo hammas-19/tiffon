@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-7xl mx-auto  px-3 flex justify-between items-end border-b pb-5">
+    <div class="max-w-7xl mx-auto  px-3 flex justify-between items-end border-b md:pb-5 pb-3">
 
         <div class="flex flex-col text-black">
             <span class="md:text-xl text-sm font-headings">Men's</span>

@@ -1,7 +1,7 @@
 <template>
 <a href="#" class="block group">
   <img
-    src="https://images.unsplash.com/photo-1592921870789-04563d55041c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+    src="https://cdn.shopify.com/s/files/1/1752/8007/collections/accessories.jpg?v=1676716695&width=1500"
     alt=""
     class="h-[350px] w-full object-cover sm:h-[450px] md:rounded-2xl rounded-lg"
   />
@@ -83,7 +83,7 @@
         Small Headphones
       </h3>
 
-      <p class="text-gray-900">$299</p>
+      <p class="text-black bg-bisonHide px-3 py-[2px] rounded-full">$299</p>
     </div>
   </div>
 </a>

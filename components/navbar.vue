@@ -67,7 +67,7 @@ input:checked+div span.line-2 {
 }
 </style>
 <template>
-    <nav class="relative px-6 lg:py-0 py-10 bg-linen">
+    <nav class="relative px-6 lg:py-0 md:py-10 py-5 bg-linen">
         <div class="lg:flex lg:items-center lg:justify-between lg:container lg:mx-auto mx-0">
             <div class="flex items-center justify-between relative">
                 <!-- Mobile menu -->
@@ -80,7 +80,7 @@ input:checked+div span.line-2 {
 
 
                     <div @click="isOpenBurgerMenu = !isOpenBurgerMenu"
-                        class="text-purplHeart dark:text-white focus:outline-none focus:text-gray-600 dark:focus:text-white  absolute right-0 -top-2 z-30">
+                        class="text-black dark:text-white focus:outline-none focus:text-gray-600 dark:focus:text-white  absolute right-0 -top-2 z-30">
                         <svg v-show="!isOpenBurgerMenu" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
@@ -109,13 +109,13 @@ input:checked+div span.line-2 {
 
             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
             <div :class="isOpenBurgerMenu ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'"
-                class="absolute inset-x-0 justify-center z-20 grow px-6 py-4 transition-all duration-300 ease-in-out lg:mt-0 max-w-7xl mx-auto lg:p-0 top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
-                <div class="flex flex-col lg:flex-row gap-6 items-center lg:justify-between justify-center w-full  px-10 my-5">
+                class="absolute inset-x-0 justify-center z-20 grow px-6 bg-linen py-4 transition-all duration-300 ease-in-out lg:mt-0 max-w-7xl mx-auto lg:p-0 top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center">
+                <div class="flex flex-col lg:flex-row gap-6 items-center lg:justify-between justify-center w-full  px-10 mt-2">
 
                     <span class=" w-fit flex md:flex-row flex-col  justify-center ">
                         <NuxtLink v-for="(navLink, index) in NavbarLink" :to="navLink.href" :key="index"
                             @click="isOpenBurgerMenu = !isOpenBurgerMenu"
-                            :active-class="'text-[#5F30E2] border-t-4  border-[#A0D4A1]'"
+                            :active-class="'text-[#5F30E2] border-t-4  border-[#c6baaa]'"
                             class="text-sm px-4 font-medium transition-colors duration-300 transform text-comet lg:mt-0 lg:py-5 py-0">
                             {{ navLink.name }}
                         </NuxtLink>
@@ -150,11 +150,11 @@ const isOpenBurgerMenu = ref(false);
 const NavbarLink = [
     {
         name: "Men",
-        href: "/",
+        href: "/productsMen",
     },
     {
         name: "Ladiis",
-        href: "",
+        href: "/productsWomen",
     },
     // {
     //     name: "courses",

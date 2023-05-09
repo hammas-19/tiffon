@@ -2,7 +2,7 @@
     <div class="bg-linen">
 
         <!-- Hero -->
-        <section class="max-w-7xl mx-auto md:px-6 px-3 md:py-10 py-5">
+        <section class="max-w-7xl mx-auto md:px-6 px-3 md:py-5 py-2">
 
             <Hero />
 
