@@ -114,7 +114,7 @@
                                         <input type="radio" name="color" id="color_tt" class="peer sr-only" />
 
                                         <span
-                                            class="group inline-block rounded-full border px-3 py-1 text-xs font-medium peer-checked:bg-black peer-checked:text-white">
+                                            class="group inline-block rounded-full border px-3 py-1 text-xs font-medium peer-checked:bg-black peer-checked:text-white hover:text-white hover:bg-[#BF5700] transition-all">
                                             Texas Tea
                                         </span>
                                     </label>
@@ -123,7 +123,7 @@
                                         <input type="radio" name="color" id="color_fr" class="peer sr-only" />
 
                                         <span
-                                            class="group inline-block rounded-full border px-3 py-1 text-xs font-medium peer-checked:bg-black peer-checked:text-white">
+                                            class="group inline-block rounded-full border px-3 py-1 text-xs font-medium peer-checked:bg-black peer-checked:text-white hover:text-white hover:bg-red-500 transition-all">
                                             Fiesta Red
                                         </span>
                                     </label>
@@ -132,7 +132,7 @@
                                         <input type="radio" name="color" id="color_cb" class="peer sr-only" />
 
                                         <span
-                                            class="group inline-block rounded-full border px-3 py-1 text-xs font-medium peer-checked:bg-black peer-checked:text-white">
+                                            class="group inline-block rounded-full border px-3 py-1 text-xs font-medium peer-checked:bg-black peer-checked:text-white hover:text-white hover:bg-[#223053] transition-all">
                                             Cobalt Blue
                                         </span>
                                     </label>
@@ -199,7 +199,7 @@
                                 </div>
 
                                 <button type="submit"
-                                    class="block rounded bg-green-600 px-5 py-3 text-xs font-medium text-white hover:bg-green-500">
+                                    class="block rounded bg-tango px-5 py-3 text-xs font-medium text-white hover:bg-bisonHide transition-all duration-300">
                                     Add to Cart
                                 </button>
                             </div>
