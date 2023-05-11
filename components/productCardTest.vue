@@ -83,7 +83,7 @@
         Small Headphones
       </h3>
 
-      <p class="text-black bg-bisonHide px-3 py-[2px] rounded-full">$299</p>
+      <p class="text-black text-base">$299</p>
     </div>
   </div>
 </NuxtLink>

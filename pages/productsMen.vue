@@ -22,7 +22,7 @@
 
         <!-- Gallery -->
         <section class="max-w-7xl mx-auto px-2">
-            <div class="grid grid-cols-2 md:grid-cols-4 md:gap-5 gap-2">
+            <div class="grid grid-cols-2 md:grid-cols-4 md:gap-5 gap-3">
 
                 <!-- The poster -->
                 <div

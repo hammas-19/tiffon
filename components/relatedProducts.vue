@@ -17,7 +17,7 @@
 
         
             <img v-for="items in products" :key="index" :src="items"
-                class="h-[350px] w-fit object-fill sm:h-[450px] md:rounded-2xl rounded-lg" alt="">
+                class="h-[350px] w-full object-cover sm:h-[450px] md:rounded-2xl rounded-lg" alt="">
         
     </div>
 </template>
