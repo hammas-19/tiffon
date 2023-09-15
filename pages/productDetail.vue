@@ -209,6 +209,8 @@
             </div>
         </section>
 
+        <pre>{{ apiData }}</pre>
+
         <!-- Recomendation -->
         <section class="w-full mx-auto md:py-10 py-5 px-2">
             <div>
@@ -231,3 +233,16 @@
 
     </div>
 </template>
+<script setup>
+// import axios from 'axios';
+const apiData = ref()
+// axios(`http://localhost:1337/api/womens?populate=image`, {
+//     method: "GET"
+// }).then((response) => {
+//     apiData.value = response.data.data;
+// }).catch((err) => {
+// });
+useStrapi('womens?populate=image').then((response) => {
+    apiData.value = response.data.data;
+})
+</script>

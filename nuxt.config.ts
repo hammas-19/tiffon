@@ -1,4 +1,10 @@
 export default defineNuxtConfig({
+	runtimeConfig: {
+    public: {
+      API_BASE_URL: process.env.STRAPI_API_URL,
+      API_READ_TOKEN: process.env.STRAPI_API_KEY
+    },
+  },
 	app: {
 		head: {
 			title: "Marjaan",
