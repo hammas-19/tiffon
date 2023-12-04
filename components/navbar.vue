@@ -128,29 +128,17 @@ const isOpenBurgerMenu = ref(false);
 
 const NavbarLink = [
     {
-        name: "Men",
-        href: "/productsMen",
+        name: "Desi Food",
+        href: "/desi",
     },
     {
-        name: "Ladiis",
-        href: "/productsWomen",
+        name: "Fast Food",
+        href: "/fastFood",
     },
-    // {
-    //     name: "courses",
-    //     href: "/courses",
-    // },
-    // {
-    //     name: "profile",
-    //     href: "/profile/userProfile",
-    // },
-    // {
-    //     name: "Contact Us",
-    //     href: "/contactUs",
-    // },
-    // {
-    //     name: "About Us",
-    //     href: "/aboutUs",
-    // },
+    {
+        name: "Beverages",
+        href: "/beverages",
+    }
 ];
 
 </script>
