@@ -129,12 +129,12 @@
                     class="w-12 rounded border border-codGrey py-3 text-center text-xs [-moz-appearance:_textfield] [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none" />
                 </div>
 
-                <p @click="addToCart(apiData)"
+                <p @click="addToCart(food.id)"
                   class="block rounded bg-tango px-5 py-3 text-xs font-medium text-white hover:bg-bisonHide transition-all duration-300">
                   Add to Cart
                 </p>
-                {{ useCartStore().cartStore }}
               </div>
+              {{ useCartStore().cartStore }}
             </form>
           </div>
         </div>
