@@ -2,12 +2,13 @@ export default defineNuxtConfig({
 	runtimeConfig: {
     public: {
       API_BASE_URL: process.env.STRAPI_API_URL,
-      API_READ_TOKEN: process.env.STRAPI_API_KEY
+			API_READ_TOKEN: process.env.STRAPI_API_KEY,
+      IMAGE_BASE_URL: process.env.IMAGE_BASE_URL
     },
   },
 	app: {
 		head: {
-			title: "Marjaan",
+			title: "Tiffon",
 			// titleTemplate: "%s | your slogan here",
 			htmlAttrs: {
 				lang: "en",

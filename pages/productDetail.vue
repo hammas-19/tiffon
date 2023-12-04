@@ -242,7 +242,7 @@ const apiData = ref()
 //     apiData.value = response.data.data;
 // }).catch((err) => {
 // });
-useStrapi('womens?populate=image').then((response) => {
+useStrapi('desi-foods?populate=views').then((response) => {
     apiData.value = response.data.data;
 })
 </script>
