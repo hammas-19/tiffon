@@ -1,6 +1,8 @@
 <template>
-  <NuxtLink to="/productDetail" class="block group">
-    <img :src="$config.public.IMAGE_BASE_URL + props.image" alt="" class="h-[350px] w-full object-cover sm:h-[450px] md:rounded-2xl rounded-lg" />
+  <div class="block group">
+
+    <img :src="$config.public.IMAGE_BASE_URL + props.image" alt=""
+      class="h-[350px] w-full object-cover sm:h-[350px] md:rounded-2xl rounded-lg" />
 
     <div class="mt-1.5">
       <p class="text-xs text-gray-500">category: {{ props.category }}</p>
@@ -11,15 +13,11 @@
         </h3>
 
         <p class="text-black text-base">
-          Rs: {{ props.price}}
+          Rs: {{ props.price }}
         </p>
-        <pre>
-      <!-- {{ $config.public.IMAGE_BASE_URL + props.image }} -->
-
-        </pre>
       </div>
     </div>
-  </NuxtLink>
+  </div>
 </template>
 <script setup>
 const props = defineProps({
@@ -38,7 +36,7 @@ const props = defineProps({
   category: {
     type: String,
     default: ""
-  }  
+  }
 
 })
 </script>
