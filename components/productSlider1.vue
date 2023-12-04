@@ -40,50 +40,37 @@
 }
 </style>
 <template>
-  <swiper :slides-per-view="5" :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange">
-    <swiper-slide v-for="(items, index) in 8" data-swiper-autoplay="2000" :key="index" class="border">{{ index + 1 }}</swiper-slide>
-
-    ...
-  </swiper>
-  <!-- <Carousel :itemsToShow="6.5" :wrapAround="true" :transition="500">
-    <Slide v-for="slide in 10" :key="slide">
+  <Carousel :itemsToShow="6.5" :wrapAround="true" :transition="500">
+    <Slide v-for="(meals, index) in displayMeals" :key="index">
       <div class="carousel__item">
-        <div class="border-4">
-          <img src="/gridImages/suit1.webp" class="rounded-xl h-full max-h-60" alt="">
-        </div>
+
+        <!-- <ProductCardTest :image="'/gridImages/suit1.webp'" /> -->
+        <img :src="meals" :alt="meals" class="rounded-xl h-full max-h-60" alt="">
 
       </div>
     </Slide>
 
-    ...
-  </Carousel> -->
+  </Carousel>
 </template>
   
-<script>
-// Import Swiper Vue.js components
-import { Swiper, SwiperSlide } from 'swiper/vue';
+<script setup>
+import { defineComponent } from 'vue'
+import { Carousel, Pagination, Slide } from 'vue3-carousel'
 
-// Import Swiper styles
-import 'swiper/css';
-
-export default {
+import 'vue3-carousel/dist/carousel.css'
+defineComponent({
+  name: 'Autoplay',
   components: {
-    Swiper,
-    SwiperSlide,
+    Carousel,
+    Slide,
+    Pagination,
   },
-  setup() {
-    const onSwiper = (swiper) => {
-      console.log(swiper);
-    };
-    const onSlideChange = () => {
-      console.log('slide change');
-    };
-    return {
-      onSwiper,
-      onSlideChange,
-    };
-  },
-};
+})
+const displayMeals = [
+'public/gridImages/collection5.jpeg'
+
+]
+
 </script>
   
 

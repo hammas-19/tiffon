@@ -29,16 +29,6 @@
     </div>
 </template>
 
-<script>
-import { ref } from 'vue';
-
-export default {
-    setup() {
-        const activeTab = ref(1);
-
-        return {
-            activeTab,
-        };
-    },
-};
+<script setup>
+const activeTab = ref(1)
 </script>
