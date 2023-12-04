@@ -4,49 +4,49 @@
         <GridContainer image="/gridImages/collection2.webp" class="h-full min-w-full row-span-2">
 
             <template #title>
-                hammas masood
+                Exclusive
             </template>
             <template #slogan>
-                lets make it worth
+                Grab Yours Now
             </template>
             <template #item1>
-                Hood
+                Desi
             </template>
             <template #item2>
-                <span refrence="/">Wood</span>
+                <span>Fast Food</span>
             </template>
         </GridContainer>
 
-        <GridContainer :content-left="false" image="/gridImages/collection3.webp" class="min-w-full h-full">
+        <GridContainer :content-left="false" image="/gridImages/collection3.jpg" class="min-w-full h-full">
 
             <template #title>
-                hammas masood
+                Exclusive
             </template>
             <template #slogan>
-                lets make it worth
+                Grab Yours Now
             </template>
             <template #item1>
-                Hood
+                Desi
             </template>
             <template #item2>
-                <span refrence="/">Wood</span>
+                <span>Fast Food</span>
             </template>
         </GridContainer>
 
 
-        <GridContainer :content-left="false" image="/gridImages/collection4.webp" class="min-w-full h-full">
+        <GridContainer :content-left="false" image="/gridImages/collection4.jpg" class="min-w-full h-full">
 
             <template #title>
-                hammas masood
+                Exclusive
             </template>
             <template #slogan>
-                lets make it worth
+                Grab Yours Now
             </template>
             <template #item1>
-                Hood
+                Desi
             </template>
             <template #item2>
-                <span refrence="/">Wood</span>
+                <span>Fast Food</span>
             </template>
         </GridContainer>
 

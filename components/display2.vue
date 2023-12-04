@@ -3,34 +3,34 @@
 
         <GridContainer image="/gridImages/collection1.webp" class="h-full min-w-full">
 
-            <template #title>
-                hammas masood
-            </template>
-            <template #slogan>
-                lets make it worth
-            </template>
-            <template #item1>
-                Hood
-            </template>
-            <template #item2>
-                <span refrence="/">Wood</span>
-            </template>
+                <template #title>
+                    Exclusive
+                </template>
+                <template #slogan>
+                    Grab Yours Now
+                </template>
+                <template #item1>
+                    Desi
+                </template>
+                <template #item2>
+                    <span>Fast Food</span>
+                </template>
         </GridContainer>
 
-        <GridContainer :content-left="false" image="/gridImages/collection5.webp" class="min-w-full h-full">
+        <GridContainer :content-left="false" image="/gridImages/collection5.jpeg" class="min-w-full h-full">
 
-            <template #title>
-                hammas masood
-            </template>
-            <template #slogan>
-                lets make it worth
-            </template>
-            <template #item1>
-                Hood
-            </template>
-            <template #item2>
-                <span refrence="/">Wood</span>
-            </template>
+                <template #title>
+                    Exclusive
+                </template>
+                <template #slogan>
+                    Grab Yours Now
+                </template>
+                <template #item1>
+                    Desi
+                </template>
+                <template #item2>
+                    <span>Fast Food</span>
+                </template>
         </GridContainer>
 
     </div>
