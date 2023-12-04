@@ -129,10 +129,11 @@
                     class="w-12 rounded border border-codGrey py-3 text-center text-xs [-moz-appearance:_textfield] [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none" />
                 </div>
 
-                <button type="submit"
+                <p @click="addToCart(apiData)"
                   class="block rounded bg-tango px-5 py-3 text-xs font-medium text-white hover:bg-bisonHide transition-all duration-300">
                   Add to Cart
-                </button>
+                </p>
+                {{ useCartStore().cartStore }}
               </div>
             </form>
           </div>
@@ -143,9 +144,17 @@
   </div>
 </template>
 <script setup>
+import { useCartStore } from '@/stores/cartStore';
+
 const apiData = ref()
 const route = useRoute()
 useStrapi(`desi-foods?populate=*&filters[id]=${route.params.id}`).then((response) => {
   apiData.value = response.data.data;
 })
+
+
+function addToCart(product) {
+  useCartStore().cartStore.push(product)
+  console.log(typeof useCartStore().cartStore)
+}
 </script>
