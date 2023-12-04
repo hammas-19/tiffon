@@ -87,96 +87,46 @@
             <span></span>
 
             <form class="mt-8">
-              <fieldset>
-                <legend class="mb-1 text-sm font-medium">Color</legend>
+                <fieldset>
+                  <legend class="mb-1 text-sm font-medium">Sauces</legend>
 
-                <div class="flex flex-wrap gap-1">
-                  <label for="color_tt" class="cursor-pointer">
-                    <input type="radio" name="color" id="color_tt" class="peer sr-only" />
+                  <div class="flex flex-wrap gap-1">
+                    <label for="color_tt" class="cursor-pointer">
+                      <input type="radio" name="color" id="color_tt" class="peer sr-only" />
 
-                    <span
-                      class="group inline-block rounded-full border px-3 py-1 text-xs font-medium peer-checked:bg-black peer-checked:text-white hover:text-white hover:bg-[#BF5700] transition-all">
-                      Texas Tea
-                    </span>
-                  </label>
+                      <span
+                        class="group inline-block rounded-full border px-3 py-1 text-xs font-medium peer-checked:bg-[#bf2d00] peer-checked:text-white hover:text-white hover:bg-[#bf2d00] transition-all">
+                        Chilli Garlic
+                      </span>
+                    </label>
 
-                  <label for="color_fr" class="cursor-pointer">
-                    <input type="radio" name="color" id="color_fr" class="peer sr-only" />
+                    <label for="color_fr" class="cursor-pointer">
+                      <input type="radio" name="color" id="color_fr" class="peer sr-only" />
 
-                    <span
-                      class="group inline-block rounded-full border px-3 py-1 text-xs font-medium peer-checked:bg-black peer-checked:text-white hover:text-white hover:bg-red-500 transition-all">
-                      Fiesta Red
-                    </span>
-                  </label>
+                      <span
+                        class="group inline-block rounded-full border px-3 py-1 text-xs font-medium peer-checked:bg-[#BF5700] peer-checked:text-white hover:text-white hover:bg-[#BF5700] transition-all">
+                        BBQ Flames
+                      </span>
+                    </label>
 
-                  <label for="color_cb" class="cursor-pointer">
-                    <input type="radio" name="color" id="color_cb" class="peer sr-only" />
+                    <label for="color_cb" class="cursor-pointer">
+                      <input type="radio" name="color" id="color_cb" class="peer sr-only" />
 
-                    <span
-                      class="group inline-block rounded-full border px-3 py-1 text-xs font-medium peer-checked:bg-black peer-checked:text-white hover:text-white hover:bg-[#223053] transition-all">
-                      Cobalt Blue
-                    </span>
-                  </label>
-                </div>
-              </fieldset>
+                      <span
+                        class="group inline-block rounded-full border px-3 py-1 text-xs font-medium peer-checked:bg-[#aeb4a4] peer-checked:text-white hover:text-white hover:bg-[#aeb4a4] transition-all">
+                        Mayo Garlic
+                      </span>
+                    </label>
+                  </div>
+                </fieldset>
 
-              <fieldset class="mt-4">
-                <legend class="mb-1 text-sm font-medium">Size</legend>
-
-                <div class="flex flex-wrap gap-1">
-                  <label for="size_xs" class="cursor-pointer">
-                    <input type="radio" name="size" id="size_xs" class="peer sr-only" />
-
-                    <span
-                      class="group inline-flex h-8 w-8 items-center justify-center rounded-full border text-xs font-medium peer-checked:bg-black peer-checked:text-white">
-                      XS
-                    </span>
-                  </label>
-
-                  <label for="size_s" class="cursor-pointer">
-                    <input type="radio" name="size" id="size_s" class="peer sr-only" />
-
-                    <span
-                      class="group inline-flex h-8 w-8 items-center justify-center rounded-full border text-xs font-medium peer-checked:bg-black peer-checked:text-white">
-                      S
-                    </span>
-                  </label>
-
-                  <label for="size_m" class="cursor-pointer">
-                    <input type="radio" name="size" id="size_m" class="peer sr-only" />
-
-                    <span
-                      class="group inline-flex h-8 w-8 items-center justify-center rounded-full border text-xs font-medium peer-checked:bg-black peer-checked:text-white">
-                      M
-                    </span>
-                  </label>
-
-                  <label for="size_l" class="cursor-pointer">
-                    <input type="radio" name="size" id="size_l" class="peer sr-only" />
-
-                    <span
-                      class="group inline-flex h-8 w-8 items-center justify-center rounded-full border text-xs font-medium peer-checked:bg-black peer-checked:text-white">
-                      L
-                    </span>
-                  </label>
-
-                  <label for="size_xl" class="cursor-pointer">
-                    <input type="radio" name="size" id="size_xl" class="peer sr-only" />
-
-                    <span
-                      class="group inline-flex h-8 w-8 items-center justify-center rounded-full border text-xs font-medium peer-checked:bg-black peer-checked:text-white">
-                      XL
-                    </span>
-                  </label>
-                </div>
-              </fieldset>
 
               <div class="mt-8 flex gap-4">
                 <div>
                   <label for="quantity" class="sr-only">Qty</label>
 
-                  <input type="number" id="quantity" min="1" value="1"
-                    class="w-12 rounded border-gray-200 py-3 text-center text-xs [-moz-appearance:_textfield] [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none" />
+                  <input type="number" id="quantity" min="1" value="1" disabled
+                    class="w-12 rounded border border-codGrey py-3 text-center text-xs [-moz-appearance:_textfield] [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none" />
                 </div>
 
                 <button type="submit"
@@ -189,11 +139,6 @@
         </div>
       </div>
     </section>
-<p>
-
-</p>
-    <pre>{{ apiData }}</pre>
-
 
   </div>
 </template>
