@@ -36,7 +36,7 @@
 </template>
 <script setup>
 const apiData = ref()
-useStrapi('desi-foods?populate=views').then((response) => {
+useStrapi('fast-foods?populate=views').then((response) => {
     apiData.value = response.data.data;
 })
 </script>
