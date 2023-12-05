@@ -14,9 +14,9 @@
                     <div
                         class="absolute bottom-5 left-5 flex flex-col gap-2 max-w-[250px] bg-graphite p-5 rounded-2xl bg-opacity-40 backdrop-blur-md">
 
-                        <h1 class="text-6xl font-headings font-bold text-white">Men in Mean</h1>
+                        <h1 class="text-6xl font-headings font-bold text-white">Order Desi Meals</h1>
                         <span class="text-white text-lg">
-                            Your State of Mind
+                            Your State of Taste
                         </span>
 
                     </div>

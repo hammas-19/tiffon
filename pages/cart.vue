@@ -104,17 +104,10 @@ async function loadCart() {
     cartUrl.value += `&filters[id][$in][${index}]=${id}`
   })
 
-  // useStrapi(`desi-foods?populate=*${cartUrl}`).then((response) => {
-  //   apiData.value = response.data.data;
-  // })
 
   let data = await useStrapi(cartUrl.value)
   apiData.value = data.data.data
 
-  // const totalAmount = computed(() => {
-  //   totalAmountPayble.value = apiData.value.map((w) => w.price)
-  //   
-  // })
 
   const amount = apiData.value.map(a => a.price)
   const sum = amount.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
@@ -127,8 +120,6 @@ function removeItemFromCard(id) {
   useCartStore().removeToCart(id)
   loadCart()
 }
-
-
 
 loadCart()
 </script>

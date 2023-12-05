@@ -8,38 +8,16 @@
 
                 </span>
 
-                <div class="flex flex-wrap justify-center mt-5 -mx-4">
-                    <a href="#"
-                        class="mx-4 text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
-                        aria-label="Reddit"> Home </a>
-
-                    <a href="#"
-                        class="mx-4 text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
-                        aria-label="Reddit"> About </a>
-
-                    <a href="#"
-                        class="mx-4 text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
-                        aria-label="Reddit"> Teams </a>
-
-                    <a href="#"
-                        class="mx-4 text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
-                        aria-label="Reddit"> Privacy </a>
-
-                    <a href="#"
-                        class="mx-4 text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
-                        aria-label="Reddit"> Cookies </a>
-                </div>
-
             </div>
 
             <hr class="my-6 border-gray-200 md:my-10 dark:border-gray-700" />
 
             <div class="flex flex-col items-center sm:flex-row sm:justify-between">
-                <p class="text-gray-500 dark:text-gray-300">© Copyright 2021. All Rights Reserved.</p>
+                <p class="text-gray-500 dark:text-gray-300">© Copyright 2023. All Rights Reserved.</p>
 
                 <div class="flex -mx-2">
                     <a href="#"
-                        class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                        class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 cursor-not-allowed"
                         aria-label="Reddit">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +28,7 @@
                     </a>
 
                     <a href="#"
-                        class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                        class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 cursor-not-allowed"
                         aria-label="Facebook">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +39,7 @@
                     </a>
 
                     <a href="#"
-                        class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                        class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 cursor-not-allowed"
                         aria-label="Github">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">

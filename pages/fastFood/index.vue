@@ -1,24 +1,5 @@
 <template>
-    <div class="bg-linen">
-
-        <section>
-            <div class="md:py-10 py-2">
-                <Tabs>
-                    <template #cat1>
-                        Hood
-                    </template>
-                    <template #cat2>
-                        Wood
-                    </template>
-                    <template #category1>
-                        <!-- <ProductSlider1 /> -->
-                    </template>
-                    <template #category2>
-                        <!-- <ProductSlider2 /> -->
-                    </template>
-                </Tabs>
-            </div>
-        </section>
+    <div class="bg-linen py-10">
 
         <!-- Gallery -->
         <section class="max-w-7xl mx-auto px-2">
@@ -32,9 +13,9 @@
                     <div
                         class="absolute bottom-5 left-5 flex flex-col gap-2 max-w-[250px] bg-graphite p-5 rounded-2xl bg-opacity-40 backdrop-blur-md">
 
-                        <h1 class="text-6xl font-headings font-bold text-white">Men in Mean</h1>
+                        <h1 class="text-6xl font-headings font-bold text-white">Order Fast Food</h1>
                         <span class="text-white text-lg">
-                            Your State of Mind
+                            Your State of Taste
                         </span>
 
                     </div>
@@ -42,7 +23,7 @@
                 </div>
                 <div v-for="(items, index) in apiData" :key="index"
                     class="max-h-fit max-w-xs flex flex-col gap-3 items-center">
-                    <NuxtLink :to="`/productsMen/` + items.id">
+                    <NuxtLink :to="`/desi/` + items.id">
                         <ProductCardTest :image="items.views[0].url" :title="items.title" :price="items.price"
                             :category="items.type" class="h-full w-full hover:opacity-70 transition-all duration-300" />
                     </NuxtLink>
