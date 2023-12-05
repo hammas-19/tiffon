@@ -40,17 +40,18 @@
 }
 </style>
 <template>
-  <Carousel :itemsToShow="6.5" :wrapAround="true" :transition="500">
-    <Slide v-for="slide in 10" :key="slide">
+  <Carousel :itemsToShow="6.5" :wrapAround="true" :autoplay="1800" :transition="500">
+    <Slide v-for="(meals, index) in displayMeals" :key="index">
       <div class="carousel__item">
-
-        <!-- <ProductCardTest :image="'/gridImages/suit1.webp'" /> -->
-        <img src="/gridImages/suit2.webp" class="rounded-xl h-full max-h-60" alt="">
-
+        <div class="flex flex-col gap-2 justify-center items-center">
+          <img :src="meals" class="rounded-xl h-full max-h-60" alt="meals">
+          <NuxtLink to="/fastFood" class="bg-tango px-5 py-3 text-white w-fit rounded-lg">
+            View
+          </NuxtLink>
+          </div>
       </div>
     </Slide>
 
-    ...
   </Carousel>
 </template>
   
@@ -59,7 +60,7 @@ import { defineComponent } from 'vue'
 import { Carousel, Pagination, Slide } from 'vue3-carousel'
 
 import 'vue3-carousel/dist/carousel.css'
- defineComponent({
+defineComponent({
   name: 'Autoplay',
   components: {
     Carousel,
@@ -67,7 +68,15 @@ import 'vue3-carousel/dist/carousel.css'
     Pagination,
   },
 })
-
+const displayMeals = [
+  '/fastFoodSlider/1.webp',
+  '/fastFoodSlider/2.webp',
+  '/fastFoodSlider/3.webp',
+  '/fastFoodSlider/4.webp',
+  '/fastFoodSlider/5.webp',
+  '/fastFoodSlider/6.webp',
+  '/fastFoodSlider/7.webp',
+]
 
 </script>
   

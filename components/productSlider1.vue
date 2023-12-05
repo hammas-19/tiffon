@@ -40,13 +40,15 @@
 }
 </style>
 <template>
-  <Carousel :itemsToShow="6.5" :wrapAround="true" :transition="500">
+  <Carousel :itemsToShow="6.5" :wrapAround="true" :autoplay="1800" :transition="500">
     <Slide v-for="(meals, index) in displayMeals" :key="index">
       <div class="carousel__item">
-
-        <!-- <ProductCardTest :image="'/gridImages/suit1.webp'" /> -->
-        <img :src="meals" :alt="meals" class="rounded-xl h-full max-h-60" alt="">
-
+        <div class="flex flex-col gap-2 justify-center items-center">
+          <img :src="meals" class="rounded-xl h-full max-h-60" alt="meals">
+          <NuxtLink to="/desi" class="bg-tango px-4 py-2 text-white w-fit rounded-lg">
+            View
+          </NuxtLink>
+        </div>
       </div>
     </Slide>
 
@@ -67,8 +69,18 @@ defineComponent({
   },
 })
 const displayMeals = [
-'public/gridImages/collection5.jpeg'
-
+  '/DesiSlider/1.jpg',
+  '/DesiSlider/4.jpeg',
+  '/DesiSlider/5.jpeg',
+  '/DesiSlider/3.jpg',
+  '/DesiSlider/6.jpeg',
+  '/DesiSlider/1.jpg',
+  '/DesiSlider/2.webp',
+  '/DesiSlider/3.webp',
+  '/DesiSlider/4.webp',
+  '/DesiSlider/2.webp',
+  '/DesiSlider/5.webp',
+  '/DesiSlider/6.webp'
 ]
 
 </script>

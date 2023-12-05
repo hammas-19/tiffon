@@ -10,7 +10,7 @@
       <section class="py-5">
 
          <Desc&handle class="border-b-0" />
-         <Tabs class="border-2 min-h-[400px]">
+         <Tabs class="min-h-[400px]">
             <template #cat1>
                Desi
             </template>
@@ -21,7 +21,7 @@
                <ProductSlider1 />
             </template>
             <template #category2>
-               <ProductSlider2  />
+               <ProductSlider2 />
             </template>
          </Tabs>
 
@@ -38,12 +38,12 @@
       <section class="py-5">
 
          <Desc&handle class="border-b-0" />
-         <Tabs>
+         <Tabs class="min-h-[400px]">
             <template #cat1>
-               Hood
+               Desi
             </template>
             <template #cat2>
-               Wood
+               Fast Food
             </template>
             <template #category1>
                <ProductSlider1 />
@@ -66,9 +66,7 @@
          <div
             class="relative bg-moss rounded-3xl h-[calc(100vh-200px)] border w-full overflow-hidden opacity-90 hover:opacity-100 transition-all duration-300">
 
-            <img
-               src="public/gridImages/kitchen.jpeg"
-               class="object-cover h-full w-full" alt="">
+            <img src="/gridImages/kitchen.jpeg" class="object-cover h-full w-full" alt="">
             <div
                class="absolute bottom-5 left-5 flex flex-col gap-2 max-w-[250px] bg-graphite p-5 rounded-2xl bg-opacity-40 backdrop-blur-md">
 
@@ -76,11 +74,11 @@
                <span class="text-white text-lg">
                   Your State of Taste
                </span>
-               <NuxtLink
+               <NuxtLink to="/desi"
                   class="text-graphite py-2 px-4 w-fit hover:w-auto opacity-10 hover:opacity-100 transition-all duration-500 text-left hover:text-center rounded-md bg-white text-xl font-semibold">
                   Shop Desi
                </NuxtLink>
-               <NuxtLink
+               <NuxtLink to="/fastFood"
                   class="text-graphite py-2 px-4 w-fit hover:w-auto opacity-10 hover:opacity-100 transition-all duration-500 text-left hover:text-center rounded-md bg-white text-xl font-semibold">
                   Shop Fast Food
                </NuxtLink>
