@@ -134,7 +134,6 @@
                   Add to Cart
                 </p>
               </div>
-              {{ useCartStore().cartStore }}
             </form>
           </div>
         </div>
@@ -154,7 +153,6 @@ useStrapi(`desi-foods?populate=*&filters[id]=${route.params.id}`).then((response
 
 
 function addToCart(product) {
-  useCartStore().cartStore.push(product)
-  console.log(typeof useCartStore().cartStore)
+  useCartStore().products.push(product)
 }
 </script>
