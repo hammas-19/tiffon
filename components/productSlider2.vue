@@ -40,12 +40,12 @@
 }
 </style>
 <template>
-  <Carousel :itemsToShow="6.5" :wrapAround="true" :autoplay="1800" :transition="500">
+  <Carousel :itemsToShow="4.5" :wrapAround="true" :autoplay="1800" :transition="500">
     <Slide v-for="(meals, index) in displayMeals" :key="index">
       <div class="carousel__item">
         <div class="flex flex-col gap-2 justify-center items-center">
           <img :src="meals" class="rounded-xl h-full max-h-60" alt="meals">
-          <NuxtLink to="/fastFood" class="bg-tango px-5 py-3 text-white w-fit rounded-lg">
+          <NuxtLink to="/fastFood" class="hover:bg-tango bg-transparent md:px-5 px-2 md:py-3 py-2 hover:text-white text-codGrey w-fit rounded-lg transition-all">
             View
           </NuxtLink>
           </div>

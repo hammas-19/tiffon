@@ -10,7 +10,7 @@
       <section class="py-5">
 
          <Desc&handle class="border-b-0" />
-         <Tabs class="min-h-[400px]">
+         <Tabs class="md:min-h-[400px]">
             <template #cat1>
                Desi
             </template>
@@ -38,7 +38,7 @@
       <section class="py-5">
 
          <Desc&handle class="border-b-0" />
-         <Tabs class="min-h-[400px]">
+         <Tabs class="md:min-h-[400px]">
             <template #cat1>
                Desi
             </template>
