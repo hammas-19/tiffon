@@ -22,7 +22,7 @@
 
                 </div>
                 <div v-for="(items, index) in apiData" :key="index"
-                    class="max-h-fit max-w-xs flex flex-col gap-3 items-center border">
+                    class="max-h-fit max-w-xs flex flex-col gap-3 items-center">
                     <NuxtLink :to="`/beverages/` + items.id">
                         <ProductCardTest :image="items.views[0].url" :title="items.title" :price="items.price"
                             :category="items.type" class="h-full w-full hover:opacity-70 transition-all duration-300" />
